@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>E-Coffee</title>
-
+    <title>Sèries</title>
     <!-- Opens Sans Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 
@@ -22,7 +21,6 @@
 
     <!-- Custom styles -->
     <link href="css/styles.min.css" media="screen" rel="stylesheet" type="text/css" >
-
     <!-- Modernizr -->
     <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
 
@@ -51,46 +49,8 @@
     </div>
     <div class="container">
         <div class="header-top">
-            <div class="row">
-                <div class="col-xs-5">
-                    <ul class="list-inline social-links">
-                        <li>
-                            <a href="#"><i class="fa fa-twitter"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li class="hidden-xs">
-                            <a href="#"><i class="fa fa-skype"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li class="hidden-xxs">
-                            <a href="#"><i class="fa fa-linkedin"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li class="hidden-xxs">
-                            <a href="#"><i class="fa fa-google-plus"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li>
-                            <a href="#"><i class="fa fa-youtube-play"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li class="hidden-xs">
-                            <a href="#"><i class="fa fa-flickr"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li>
-                            <a href="#"><i class="fa fa-facebook"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li><li class="hidden-xs">
-                            <a href="#"><i class="fa fa-pinterest"></i><span class="equalizer-bar bg-red"></span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xs-7">
                     <div class="header-top-dropdown">
-                        <div class="btn-group dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                                <span class="text"><i class="fa fa-search"></i> Search</span>
-                                <span class="equalizer-bar bg-red"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li>
-                                    <form role="search" class="search-box">
-                                        <div class="form-group has-feedback no-margin">
-                                            <input type="text" class="form-control" placeholder="Search">
-                                            <i class="fa fa-search form-control-feedback"></i>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
+                        
                         <div class="btn-group dropdown">
                             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                                 <span class="text"><i class="fa fa-user"></i> Login</span>
@@ -100,11 +60,11 @@
                                 <li>
                                     <form class="login-form" action="#">
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" placeholder="Username">
+                                            <input type="text" name="username" class="form-control" placeholder="Username">
                                             <i class="fa fa-user form-control-feedback"></i>
                                         </div>
                                         <div class="form-group has-feedback">
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="password" name="username" class="form-control" placeholder="Password">
                                             <i class="fa fa-lock form-control-feedback"></i>
                                         </div>
                                         <button type="submit" class="btn standard-hover-effect bg-red btn-block">
@@ -130,8 +90,28 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="side-menu-tab">
+                        <a class="expand" href="#">
+                            <i class="fa fa-gear"></i>
+                        </a>
+                        <div class="side-menu-tab-content">
+                            <h3 class="side-menu-header">Style switcher</h3>
+                            <h4>Box transparency</h4>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a class="btn standard-hover-effect bg-red btn-block change-opacity" href="#" data-opacity="low">
+                                        <span class="text">Low</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="btn standard-hover-effect bg-red btn-block change-opacity active" href="#" data-opacity="high">
+                                        <span class="text">High</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
         </div>
         <div class="main-header">
             <div class="navbar navbar-inverse">
@@ -143,12 +123,9 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="Equalizer"> Equalizer
-                        </a>
+                        <a href="index.html"><img src="img/logo.png" alt=""> Sèries</a>
                     </div>
                 </div>
-                <div class="slogan hidden-xs"><i class="fa fa-quote-left"></i>What Would The World Be Like Without Music?</div>
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="nav navbar-nav">
                         <li>
@@ -157,121 +134,50 @@
                                 <span class="equalizer-bar bg-blue"></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="info.html">
-                                <span class="text">Info</span>
-                                <span class="equalizer-bar bg-violet"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="gallery.html">
-                                <span class="text">Gallery</span>
+                        <li class="active">
+                            <a href="S&egrave;ries.html">
+                                <span class="text">S&egrave;ries</span>
                                 <span class="equalizer-bar bg-violet-2"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="text">News <b class="caret"></b></span>
+                            <a href="Pel&middot;l&iacute;cules.html">
+                                <span class="text">Pel&middot;l&iacute;cules</span>
                                 <span class="equalizer-bar bg-pink"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="news-list.html">
-                                        <span class="text">News list</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="news-item.html">
-                                        <span class="text">News item</span>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="text">Events <b class="caret"></b></span>
+                            <a href="Videojocs.html">
+                                <span class="text">Videojocs</span>
                                 <span class="equalizer-bar bg-red-2"></span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="events-list.html">
-                                        <span class="text">Events list</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="event-item.html">
-                                        <span class="text">Event item</span>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="text">Blog <b class="caret"></b></span>
+                        <li>
+                            <a href="M&uacute;sica.html">
+                                <span class="text">M&uacute;sica</span>
                                 <span class="equalizer-bar bg-red"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="active">
-                                    <a href="blog-list.html">
-                                        <span class="text">Blog list</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="blog-item.html">
-                                        <span class="text">Blog item</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="tickets.html">
-                                <span class="text">Tickets</span>
-                                <span class="equalizer-bar bg-orange"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="timeline.html">
-                                <span class="text">Timeline</span>
-                                <span class="equalizer-bar bg-yellow"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="text">Pages <b class="caret"></b></span>
-                                <span class="equalizer-bar bg-green"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="page-404.html">
-                                        <span class="text">Page 404</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">
-                                        <span class="text">Typography</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="features.html">
-                                        <span class="text">Features</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">
-                                        <span class="text">FAQ</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="sign-in-up.html">
-                                <span class="text">Sign In/Up</span>
-                                <span class="equalizer-bar bg-green-2"></span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="standard-box no-border" id="slider">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/slider-photos/Television1-1920x500.png" alt="slide-1">
+                                <div class="carousel-caption">
+                                    
+                                    <h1 class="carousel-heading">S&egrave;ries </h1>
+                                    <p>Parla i comparteix el que vulguis sobre les teves sèries favorites</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>   
+            </div>  
+            
         </div>
         <div class="side-menu-tab">
             <a class="expand" href="#">
@@ -297,14 +203,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="standard-box">
-                    <h1 class="standard-header">
-                        <span class="text">Posts</span>
-                        <span class="btn-group">
-                            <a href="#" class="btn btn-lg btn-danger tiles-view active">Alphabetical</a>
-                            <a href="#" class="btn btn-lg btn-danger list-view">Date</a>
-                            <a href="#" class="btn btn-lg btn-danger list-view">Rating</a>
-                        </span>
-                    </h1>
+                    
                     <div class="standard-article-item news">
                         <div class="row">
                             <div class="col-sm-4">
@@ -596,195 +495,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
-                        <div class="standard-box">
-                            <h2 class="standard-header">
-                                <span class="text">Events</span>
-                            </h2>
-                            <div class="standard-article-item event">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <a class="standard-article-image" href="event-item.html">
-                                            <span class="event-status bg-red"></span>
-                                            <img class="img-responsive" src="img/photos/concert-4-L.jpg" alt="photo by Venttu">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <h3 class="standard-article-header"><a href="event-item.html">Opeth</a></h3>
-                                        <p><i class="fa fa-calendar"></i> Feb 16 <i class="fa fa-clock-o"></i> 20:00</p>
-                                        <p><i class="fa fa-bank"></i> Warsaw, Progresja Club</p>
-                                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="standard-article-item event">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <a class="standard-article-image" href="event-item.html">
-                                            <span class="event-status bg-red"></span>
-                                            <img class="img-responsive" src="img/photos/concert-1-L.jpg" alt="photo by Martin Fisch">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <h3 class="standard-article-header"><a href="event-item.html">Porcupine Tree <span class="label label-danger">Sold</span></a></h3>
-                                        <p><i class="fa fa-calendar"></i> Feb 28 <i class="fa fa-clock-o"></i> 20:00</p>
-                                        <p><i class="fa fa-bank"></i> Cracow, Klub Studio</p>
-                                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="standard-article-item event">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <a class="standard-article-image" href="event-item.html">
-                                            <span class="event-status bg-yellow"></span>
-                                            <img class="img-responsive" src="img/photos/concert-6-L.jpg" alt="photo by Martin Fisch">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <h3 class="standard-article-header"><a href="event-item.html">Pain Of Salvation</a></h3>
-                                        <p><i class="fa fa-calendar"></i> Mar 10 <i class="fa fa-clock-o"></i> 20:00</p>
-                                        <p><i class="fa fa-bank"></i> Cracow, Klub Kwadrat</p>
-                                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="standard-article-item event">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <a class="standard-article-image" href="event-item.html">
-                                            <span class="event-status bg-green-2"></span>
-                                            <img class="img-responsive" src="img/photos/concert-8-L.jpg" alt="photo by Justin M. Martinez">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <h3 class="standard-article-header"><a href="event-item.html">Sting &amp; Paul Simon</a></h3>
-                                        <p><i class="fa fa-calendar"></i> Mar 27 <i class="fa fa-clock-o"></i> 20:00</p>
-                                        <p><i class="fa fa-bank"></i> Cracow, Klub Kwadrat</p>
-                                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <hr>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="standard-article-item event">
-                                <div class="row">
-                                    <div class="col-xs-4">
-                                        <a class="standard-article-image" href="event-item.html">
-                                            <span class="event-status bg-green-2"></span>
-                                            <img class="img-responsive" src="img/photos/concert-7-L.jpg" alt="photo by -sel">
-                                        </a>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <h3 class="standard-article-header"><a href="event-item.html">Muse</a></h3>
-                                        <p><i class="fa fa-calendar"></i> Mar 27 <i class="fa fa-clock-o"></i> 20:00</p>
-                                        <p><i class="fa fa-bank"></i> Cracow, Klub Kwadrat</p>
-                                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <hr class="no-border">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-6">
-                                    <a class="btn standard-hover-effect bg-red btn-block" href="events-list.html">
-                                        <span class="text">More <i class="fa fa-arrow-right"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-6 col-xs-12">
-                        <div class="standard-box">
-                            <h2 class="standard-header">
-                                <span class="text">FAQ</span>
-                            </h2>
-                            <div class="panel-group" id="accordion">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                            <span class="event-status bg-red"></span>
-                                            What is Equalizer?
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                                <span class="event-status bg-red"></span>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                                <span class="event-status bg-yellow"></span>
-                                                Maecenas quis orci sagittis, aliquam neque et, dictum justo?
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                                <span class="event-status bg-green"></span>
-                                                Brunch 3 wolf moon tempor
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <div id="collapseFour" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-6">
-                                    <a class="btn standard-hover-effect bg-red btn-block" href="faq.html">
-                                        <span class="text">More <i class="fa fa-arrow-right"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
        
     </div>

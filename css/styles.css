@@ -16,7 +16,7 @@ html, body {
 }
 body {
     overflow-x: hidden;
-    background: url("../img/background.jpg") repeat top center fixed;
+    background: url("../img/strangerthings.jpg") repeat top center fixed;
 }
 
 /*preloader*/

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>E-Coffee</title>
-
+    <title>Música</title>
     <!-- Opens Sans Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 
@@ -22,7 +21,6 @@
 
     <!-- Custom styles -->
     <link href="css/styles.min.css" media="screen" rel="stylesheet" type="text/css" >
-
     <!-- Modernizr -->
     <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
 
@@ -51,7 +49,6 @@
     </div>
     <div class="container">
         <div class="header-top">
-           
                     <div class="header-top-dropdown">
                         
                         <div class="btn-group dropdown">
@@ -63,11 +60,11 @@
                                 <li>
                                     <form class="login-form" action="#">
                                         <div class="form-group has-feedback">
-                                            <input type="text" class="form-control" placeholder="Username">
+                                            <input type="text" name="username" class="form-control" placeholder="Username">
                                             <i class="fa fa-user form-control-feedback"></i>
                                         </div>
                                         <div class="form-group has-feedback">
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <input type="password" name="username" class="form-control" placeholder="Password">
                                             <i class="fa fa-lock form-control-feedback"></i>
                                         </div>
                                         <button type="submit" class="btn standard-hover-effect bg-red btn-block">
@@ -93,8 +90,28 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="side-menu-tab">
+                        <a class="expand" href="#">
+                            <i class="fa fa-gear"></i>
+                        </a>
+                        <div class="side-menu-tab-content">
+                            <h3 class="side-menu-header">Style switcher</h3>
+                            <h4>Box transparency</h4>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <a class="btn standard-hover-effect bg-red btn-block change-opacity" href="#" data-opacity="low">
+                                        <span class="text">Low</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a class="btn standard-hover-effect bg-red btn-block change-opacity active" href="#" data-opacity="high">
+                                        <span class="text">High</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
         </div>
         <div class="main-header">
             <div class="navbar navbar-inverse">
@@ -106,7 +123,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand">
-                        <a href="index.html"><img src="img/logo.png" alt=""> E-Coffee</a>
+                        <a href="index.html"><img src="img/logo.png" alt=""> Música</a>
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="main-menu">
@@ -145,27 +162,6 @@
                 </div>
             </div>
         </div>
-        <div class="side-menu-tab">
-            <a class="expand" href="#">
-                <i class="fa fa-gear"></i>
-            </a>
-            <div class="side-menu-tab-content">
-                <h3 class="side-menu-header">Style switcher</h3>
-                <h4>Box transparency</h4>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <a class="btn standard-hover-effect bg-red btn-block change-opacity" href="#" data-opacity="low">
-                            <span class="text">Low</span>
-                        </a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a class="btn standard-hover-effect bg-red btn-block change-opacity active" href="#" data-opacity="high">
-                            <span class="text">High</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="standard-box no-border" id="slider">
@@ -181,69 +177,384 @@
                         </div>
                 </div>   
             </div>  
-            <div class="col-md-8">
-                <div class="standard-box no-border" id="slider">
-                    <h1 class="standard-header">
-                        <span class="text">Info</span>
-                    </h1>
-                    <div class="standard-text">
-                        <h2>About Us</h2>
-                        <a class="img-link pull-right" href="img/photos/concert-8.jpg" data-lightbox="about-us" data-title="Guitar player">
-                            <img src="img/photos/concert-8-L.jpg" alt="About us">
-                            <span class="description"><strong>Image 1:</strong> Guitar player</span>
-                            <span class="overlay">
-                                <i class="fa fa-plus"></i>
-                            </span>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet semper diam, quis commodo eros. Nam mi est, faucibus et varius tempus, tincidunt in dolor. Fusce sodales, lectus vel molestie rhoncus, elit massa aliquam lacus, porta aliquam sem tortor vitae nisl. Pellentesque aliquam condimentum nunc ut sollicitudin. Ut urna nunc, consectetur vitae viverra at, tempus eu tortor. Duis sed interdum nisl. Vivamus ac metus in arcu vestibulum pretium. Fusce ac rutrum lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Sed porta ac ipsum ut mollis. Integer id vestibulum dui, at dapibus orci. Nunc adipiscing, orci sit amet ultricies sagittis, arcu orci feugiat lorem, nec feugiat magna erat id lectus. Cras tristique eu sapien ut aliquam. Cras pharetra nisl sapien, ut tincidunt nunc feugiat at. Donec massa nisl, tincidunt eu nulla quis, tristique facilisis nibh. Praesent viverra tempor lectus et consectetur.</p>
-                        <p>Donec ornare dictum augue, sed bibendum enim mattis a. Donec at metus purus. Duis pellentesque feugiat odio sed vehicula. Pellentesque egestas ac nisi id auctor. Cras aliquet, ligula a lobortis tristique, sapien libero ornare libero, et viverra tellus nisi non ligula. Nullam eleifend lacus sem, sit amet rutrum elit congue vitae. Praesent vehicula viverra odio in aliquet.</p>
-                        <blockquote>
-                            <p>Donec ornare dictum augue, sed bibendum enim mattis a. Donec at metus purus. Duis pellentesque feugiat odio sed vehicula. Pellentesque egestas ac nisi id auctor. Cras aliquet, ligula a lobortis tristique, sapien libero ornare libero, et viverra tellus nisi non ligula.</p>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet semper diam, quis commodo eros. Nam mi est, faucibus et varius tempus, tincidunt in dolor. Fusce sodales, lectus vel molestie rhoncus, elit massa aliquam lacus, porta aliquam sem tortor vitae nisl. Pellentesque aliquam condimentum nunc ut sollicitudin. Ut urna nunc, consectetur vitae viverra at, tempus eu tortor. Duis sed interdum nisl. Vivamus ac metus in arcu vestibulum pretium. Fusce ac rutrum lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <h3>Our benefits</h3>
-                        <p>Pellentesque imperdiet diam ut augue vulputate eleifend vitae id lorem. Aliquam a congue lectus, nec sollicitudin risus. Vivamus id nisi tincidunt, tempus orci sed, vestibulum eros. Nulla facilisi. Nam eu ornare libero. Suspendisse adipiscing neque et egestas bibendum. Morbi vulputate non tellus eu dapibus. Maecenas tempor scelerisque pulvinar. Donec dictum pulvinar rhoncus. Sed ornare quis orci eget viverra. Sed tincidunt id turpis interdum congue. Nam quis scelerisque lacus. Suspendisse id metus nibh.</p>
-                        <ul class="list">
-                            <li>Aliquam a congue lectus, nec sollicitudin risus.</li>
-                            <li>Cras pharetra nisl sapien, ut tincidunt nunc feugiat at.</li>
-                            <li>Vivamus ac metus in arcu vestibulum pretium.</li>
-                            <li>Ut urna nunc, consectetur vitae viverra at, tempus eu tortor.</li>
-                            <li>Nam eu ornare libero, suspendisse adipiscing neque et egestas bibendum.
-                                <ul>
-                                    <li>Aliquam a congue lectus, nec sollicitudin risus.</li>
-                                    <li>Sed tincidunt id turpis interdum congue, nam quis scelerisque lacus.</li>
-                                    <li>Vestibulum laoreet porttitor sem.</li>
-                                    <li>Nullam eleifend lacus sem, sit amet rutrum elit congue vitae.</li>
-                                </ul>
-                            </li>
-                            <li>Faucibus porta lacus fringilla vel, nam quis scelerisque lacus.</li>
-                            <li>Aenean sit amet erat nunc, et viverra tellus nisi non ligula.</li>
-                            <li>Eget porttitor lorem, arcu orci feugiat lorem.</li>
-                        </ul>
-                        <p>Sed porta ac ipsum ut mollis. Integer id vestibulum dui, at dapibus orci. Nunc adipiscing, orci sit amet ultricies sagittis, arcu orci feugiat lorem, nec feugiat magna erat id lectus. Cras tristique eu sapien ut aliquam. Cras pharetra nisl sapien, ut tincidunt nunc feugiat at. Donec massa nisl, tincidunt eu nulla quis, tristique facilisis nibh. Praesent viverra tempor lectus et consectetur.</p>
-                        <p>Vivamus rhoncus felis non lorem adipiscing, ac faucibus diam mattis. Vestibulum malesuada, sem vitae placerat consequat, est odio dapibus est, ac rutrum tortor justo eget sapien. Etiam vehicula mattis aliquet. Sed dictum hendrerit blandit. Suspendisse justo lacus, ultricies quis aliquam eu, convallis vel neque. Integer lobortis eu dolor a molestie. Nulla rhoncus justo vel risus dictum adipiscing. Donec ornare dictum augue, sed bibendum enim mattis a. Donec at metus purus. Duis pellentesque feugiat odio sed vehicula. Pellentesque egestas ac nisi id auctor. Cras aliquet, ligula a lobortis tristique, sapien libero ornare libero, et viverra tellus nisi non ligula. Nullam eleifend lacus sem, sit amet rutrum elit congue vitae. Praesent vehicula viverra odio in aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent interdum nisl et magna dignissim tincidunt.</p>
-                        <h3>What we do</h3>
-                        <a class="img-link pull-left" href="img/photos/concert-2.jpg" data-lightbox="about-us" data-title="Another guitar player">
-                            <img src="img/photos/concert-2-L.jpg" alt="About us">
-                            <span class="description"><strong>Image 2:</strong> Another guitar player</span>
-                            <span class="overlay">
-                                <i class="fa fa-plus"></i>
-                            </span>
-                        </a>
-                        <p>Sed porta ac ipsum ut mollis. Integer id vestibulum dui, at dapibus orci. Nunc adipiscing, orci sit amet ultricies sagittis, arcu orci feugiat lorem, nec feugiat magna erat id lectus. Cras tristique eu sapien ut aliquam. Cras pharetra nisl sapien, ut tincidunt nunc feugiat at. Donec massa nisl, tincidunt eu nulla quis, tristique facilisis nibh. Praesent viverra tempor lectus et consectetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet semper diam, quis commodo eros. Nam mi est, faucibus et varius tempus, tincidunt in dolor. Fusce sodales, lectus vel molestie rhoncus, elit massa aliquam lacus, porta aliquam sem tortor vitae nisl. Pellentesque aliquam condimentum nunc ut sollicitudin. Ut urna nunc, consectetur vitae viverra at, tempus eu tortor. Duis sed interdum nisl. Vivamus ac metus in arcu vestibulum pretium. Fusce ac rutrum lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p>Pellentesque imperdiet diam ut augue vulputate eleifend vitae id lorem. Aliquam a congue lectus, nec sollicitudin risus. Vivamus id nisi tincidunt, tempus orci sed, vestibulum eros. Nulla facilisi. Nam eu ornare libero. Suspendisse adipiscing neque et egestas bibendum. Morbi vulputate non tellus eu dapibus. Maecenas tempor scelerisque pulvinar. Donec dictum pulvinar rhoncus. Sed ornare quis orci eget viverra. Sed tincidunt id turpis interdum congue. Nam quis scelerisque lacus. Suspendisse id metus nibh.</p>
-                        <h3>Why Equalizer?</h3>
-                        <p>Vivamus rhoncus felis non lorem adipiscing, ac faucibus diam mattis. Vestibulum malesuada, sem vitae placerat consequat, est odio dapibus est, ac rutrum tortor justo eget sapien. Etiam vehicula mattis aliquet. Sed dictum hendrerit blandit. Suspendisse justo lacus, ultricies quis aliquam eu, convallis vel neque. Integer lobortis eu dolor a molestie. Nulla rhoncus justo vel risus dictum adipiscing. Donec ornare dictum augue, sed bibendum enim mattis a. Donec at metus purus. Duis pellentesque feugiat odio sed vehicula. Pellentesque egestas ac nisi id auctor. Cras aliquet, ligula a lobortis tristique, sapien libero ornare libero, et viverra tellus nisi non ligula. Nullam eleifend lacus sem, sit amet rutrum elit congue vitae. Praesent vehicula viverra odio in aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent interdum nisl et magna dignissim tincidunt.</p>
-                        <blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet semper diam, quis commodo eros. Nam mi est, faucibus et varius tempus, tincidunt in dolor. Fusce sodales, lectus vel molestie rhoncus, elit massa aliquam lacus, porta aliquam sem tortor vitae nisl. Pellentesque aliquam condimentum nunc ut sollicitudin. Ut urna nunc, consectetur vitae viverra at, tempus eu tortor. Duis sed interdum nisl. Vivamus ac metus in arcu vestibulum pretium. Fusce ac rutrum lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="standard-box">
+                        
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>21</span></span>
+                                            <span class="month">feb</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/concert-5-blog.jpg" alt="photo by Martin Fisch">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">My first heavy metal band concert</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 2 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">heavy metal</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Praesent at gravida eros. Proin pulvinar nisi..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>24</span></span>
+                                            <span class="month">feb</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/concert-2-blog.jpg" alt="photo by Martin Fisch">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">My first heavy metal band concert is very nice dude</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 2 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">heavy metal</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Praesent at gravida eros. Proin pulvinar nisi..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>25</span></span>
+                                            <span class="month">feb</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/concert-3-blog.jpg" alt="photo by Martin Fisch">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">New album from Steven Wilson</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 3 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">heavy metal</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Praesent at gravida eros. Proin pulvinar nisi..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>26</span></span>
+                                            <span class="month">feb</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/concert-6-blog.jpg" alt="photo by Martin Fisch">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">My first heavy metal band concert is very nice dude</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 2 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">heavy metal</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Praesent at gravida eros. Proin pulvinar nisi..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr class="no-border">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>31</span></span>
+                                            <span class="month">mar</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/lights-1-blog.jpg" alt="photo by Dan Brady">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">Have you seen last Archive performance?</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 4 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">electronic</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur. Praesent at gravida eros. Proin pulvinar nisi. Sed porta ac ipsum ut mollis. Integer id vestibulum dui, at dapibus orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Proin pulvinar nisi...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="standard-article-item news">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="standard-article-image" href="blog-item.html">
+                                        <span class="standard-article-date date-full">
+                                            <span class="day"><span>31</span></span>
+                                            <span class="month">mar</span>
+                                            <span class="year">2014</span>
+                                        </span>
+                                        <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                                        <img class="img-responsive" src="img/photos/concert-2-blog.jpg" alt="photo by Martin Fisch">
+                                        <span class="rating">
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star positive">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                            <span class="star negative">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3 class="standard-article-header"><a href="blog-item.html">My first heavy metal band concert is very nice dude</a></h3>
+                                    <div class="list-toolbar">
+                                        <a href="#"><i class="fa fa-comments"></i> 2 comments</a>
+                                        <i class="fa fa-tags"></i> <a href="#">rock</a>, <a href="#">progressive</a>, <a href="#">concert</a>, <a href="#">stage</a>, <a href="#">live</a>, <a href="#">heavy metal</a>, <a href="#">stage</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie. Praesent at gravida eros. Proin pulvinar nisi..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisi sit amet suscipit molestie...</p>
+                                    <a class="btn standard-hover-effect bg-red" href="blog-item.html">
+                                        <span class="text">More</span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <hr class="no-border">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#"><small>&laquo;</small> First</a></li>
+                                <li class="disabled"><a href="#"><small>&laquo;</small> Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">Next <small>&raquo;</small></a></li>
+                                <li><a href="#">Last <small>&raquo;</small></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <div class="standard-box">
+                                <h2 class="standard-header">
+                                    <span class="text">Tops Setmanals</span>
+                                </h2>
+                                <div class="standard-article-item event">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a class="standard-article-image" href="event-item.html">
+                                                <span class="event-status bg-red"></span>
+                                                <li><img class="img-responsive" src="img/photos/concert-4-L.jpg" alt="photo by Venttu"></li>
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h3 class="standard-article-header"><a href="event-item.html">Top millors albums del 2020</a></h3>
+                                            <ul>  
+                                                <li> 1- Microphones in 2020 
+                                                <li> 2- アダンの風 (Windswept Adan)
+                                                <li> 3- Visions of Bodies Being Burned
+                                                <li> 4- Fetch the Bolt Cutters
+                                                <li> 5- What's Your Pleasure?                                            
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="standard-article-item event">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a class="standard-article-image" href="event-item.html">
+                                                <span class="event-status bg-red"></span>
+                                                <img class="img-responsive" src="img/photos/concert-1-L.jpg" alt="photo by Martin Fisch">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h3 class="standard-article-header"><a href="event-item.html">Top millors albums del 2015 <span class="label label-danger"></span></a></h3>
+                                            <ul>  
+                                                <li> 1- To Pimp a Butterfly 
+                                                <li> 2- Carrie & Lowell
+                                                <li> 3- Jenny Death: The Powers That B Disc 2
+                                                <li> 4- UNDERTALE Soundtrack
+                                                <li> 5- Divers                                            
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="standard-article-item event">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <a class="standard-article-image" href="event-item.html">
+                                                <span class="event-status bg-yellow"></span>
+                                                <img class="img-responsive" src="img/photos/concert-6-L.jpg" alt="photo by Martin Fisch">
+                                            </a>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <h3 class="standard-article-header"><a href="event-item.html">Top millors albmus del 2010</a></h3>
+                                            <ul>  
+                                                <li> 1- My Beautiful Dark Twisted Fantasy 
+                                                <li> 2- Have One on Me
+                                                <li> 3- NieR Gestalt & RepliCant Original Soundtrack
+                                                <li> 4- Cosmogramma
+                                                <li> 5- Just Got Back From the Discomfort—We're Alright                                            
+                                            </ul>
+                                        </div>
+                                       
+                                
+                            </div>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
+        
+        
+            
             
         </div>
     </div>
